@@ -185,7 +185,12 @@ body {
     width: 68px;
     border-radius: 30%;
     border: solid 1px #298417;
+    transition: 0.3s;
+}
 
+.start-btn:hover {
+    background-color: #00ff00;
+    opacity: 0.5;
 }
 
 .start-btn:active {

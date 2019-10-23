@@ -47,7 +47,14 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
 
 #### Styling
 
-    
+- #### Colours
+
+    The site is designed to be simple and intuitive.  The dark background contrasts with the game board, helping it to stand out.  The buttons, display, slider and modals all use colours which are in keeping with the game board for design continuity.  The white font is easy to read on the dark background.
+
+- #### Fonts
+
+    The Google Font Righteous was chosen as it is easy to read and has a slightly retro feel to it.
+
 - #### Backgrounds
 
     The background image on the main site, the information and lose modals, and the win modal are royalty free images from [Unsplash](https://unsplash.com/).
