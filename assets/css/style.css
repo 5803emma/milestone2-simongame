@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap');
 
 html,
 body {
@@ -307,8 +306,8 @@ input:checked[type="checkbox"]:before {
     background: url(../images/winner.jpg) no-repeat center center;
     background-size: cover;
     background-color: #0c1d5a;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+    color: yellow;
+    font-family: 'Righteous', sans-serif;
     top: 3vh;
     width: 90%;
     margin: auto;
