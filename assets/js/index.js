@@ -20,7 +20,7 @@ const startWinModal = document.getElementById("start-modal-win-button");
 const loseModalDisplay = document.getElementById("lose-modal-display");
 const winModalDisplay = document.getElementById("win-modal-display");
 
-// Code inside the function below will wait until an event signals that the Document Object Model is fully created
+// Code inside the function below will wait until Document Object Model is fully created
 
 $(document).ready(function() {
     
@@ -154,6 +154,7 @@ function gamePlay() {
     }, 800);
 }
 
+
 // Functions which give the light and audio to the blocks
 
 function yellowLightWithAudio() {
@@ -180,21 +181,16 @@ function greenLightWithAudio() {
     playAudio('green');
 }
 
-/* 
-This function where the light of all of the pads are being removed, this has a timeout function that will
-remove all lights after 400 milliseconds.
-*/
+// This function removes the lights from the blocks
+// The timeout is set to 600 miliseconds
 
 function playerTimeout() {
     playTimeout = setTimeout(function() {
         removeLightOnAllBlocks();
-    }, 400);
+    }, 600);
 }
 
-/*
-This function where all of the sounds are generated. This takes an argument of 'audioPlayed' and wherever the function
-is called, it will take the argument of whatever sound needs to be implemented after 'sound-'.
-*/
+// Function that generates the audio for each block
 
 function playAudio(audioPlayed) {
     let sound = $(`#sound-${audioPlayed}`)[0];
@@ -202,10 +198,7 @@ function playAudio(audioPlayed) {
     sound.play();
 }
 
-/* 
-This function returns all of the colours back to their original state from being flashed by removing
-the light class name through jQuery. 
-*/
+// Return blocks to their default colours
 
 function removeLightOnAllBlocks() {
     $(yellowBlock).removeClass("bright-yellow");
@@ -214,7 +207,7 @@ function removeLightOnAllBlocks() {
     $(greenBlock).removeClass("bright-green");
 }
 
-// This function will flash all of the colours at the same time using jQuery.
+// Add bright colours to all blocks
 
 function addLightsToAllBlocks() {
     $(yellowBlock).addClass("bright-yellow");
@@ -223,10 +216,7 @@ function addLightsToAllBlocks() {
     $(greenBlock).addClass("bright-green");
 }
 
-/* 
-This function is to order a game over modal to appear with the final score when the game is lost.
-This will show the modal & show the final score using jQuery.
-*/
+// Game Over Modal
 
 function displayModal() {
     $('#loseModal').modal('show');
