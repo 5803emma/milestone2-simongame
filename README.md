@@ -113,6 +113,12 @@ The Google Font Righteous was chosen as it is easy to read and has a slightly re
 
 ## Testing
 
+ - Google Chrome developer tools were used to test responsiveness across various devices sizes and operating systems
+ - I used [Browserling](https://www.browserling.com/) to test the website across multiple browsers to ensure compatability and responsiveness.
+ - All buttons across the site pages were manually tested and operational
+ - HTML and CSS code were checked on the [W3C Markup](https://validator.w3.org/) and [CSS Jigsaw](https://jigsaw.w3.org/css-validator/) validators
+- Friends and family members played the game.
+
 
 ## Media
 

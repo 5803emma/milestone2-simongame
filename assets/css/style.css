@@ -37,8 +37,7 @@ body {
 
 
 .board-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    
     display: flex;
     padding: 0;
     margin: auto;
@@ -253,7 +252,7 @@ input:checked[type="checkbox"]:before {
     max-height: 80px;
     border-radius: 20px;
     padding-top: 0;
-    margin: 20;
+    margin: 20px;
     font-weight: bold;
     
 }
@@ -355,7 +354,7 @@ input:checked[type="checkbox"]:before {
         padding-top: 1.8vw;
     }
     .strict-container {
-        font-size: 5vw;
+        font-size: 2vw;
         margin-top: 24.7vw;
         margin-left: 8.3vw;
     }
@@ -381,19 +380,19 @@ input:checked[type="checkbox"]:before {
         border-radius: 3vw;
     }
     .yellow-block {
-        border-top-left-radius: 35;
+        border-top-left-radius: 35vw;
     }
 
     .blue-block {
-        border-top-right-radius: 35;
+        border-top-right-radius: 35vw;
     }
 
     .red-block {
-        border-bottom-left-radius: 35;
+        border-bottom-left-radius: 35vw;
     }
 
     .green-block {
-        border-bottom-right-radius: 35;
+        border-bottom-right-radius: 35vw;
     }
 }
 
@@ -431,20 +430,3 @@ input:checked[type="checkbox"]:before {
 }
 
 
-@-webkit-keyframes scrollDown {
-    from {
-        margin-top: 0;
-    }
-    to {
-        margin-top: 8px;
-    }
-}
-
-@keyframes scrollDown {
-    from {
-        margin-top: 0;
-    }
-    to {
-        margin-top: 8px;
-    }
-}
