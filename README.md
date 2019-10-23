@@ -1,4 +1,4 @@
-<h1>
+<h1 align="center">
 Milestone Project Two <br>Simon Memory Game<br> 
 </h1>
 
@@ -102,21 +102,52 @@ The Google Font Righteous was chosen as it is easy to read and has a slightly re
 - [Google Fonts](https://fonts.google.com/)
 - [Font Aewsome](https://fontawesome.com/)
 - [Bootstrap](https://getbootstrap.com/)
-- - [Github](https://github.com/)
+- [Github](https://github.com/)
 - The Integrated Development Environment used for this project was Cloud 9 via [Amazon Web Services](https://aws.amazon.com/cloud9/)
 
 
-## Version Control and Deploying the Project
+## Version Control
 
 - Github was used for version control and to deploy the website.
 - A Github repository was created and the bash terminal in Cloud 9 was used to commit and push project changes.
 
+## Deployment
+
+The website is hosted using GitHub pages which were deployed directly from the master branch. The site that is deployed will automatically update itself when new commits are made to the master branch. At the moment of submitting this Milestone project the Master Branch and Development Branch are identical. 
+
+The project was developed using [Cloud9 IDE](https://c9.io) via Amazon Web Services.  It was committed to git and pushed to GitHub using the terminal in Cloud9. 
+
+To deploy this page to GitHub Pages from its [GitHub repository](https://5803emma.github.io/milestone2-simongame/), the following steps were taken: 
+
+- Log into GitHub. 
+- Select the repository **5803emma/milestone2-simongame**.
+- Go to the top of the page and select **Settings** from the menu.
+- Scroll down to the **GitHub Pages** section.
+- Under **Source** click the drop-down item **None** and choose **Master Branch**
+- This selection automatically refreshes the page and the website is deployed. 
+- Go back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+
+
+### How to run this project locally
+
+To clone this project from GitHub:
+1. Click on this link to the [GitHub repository](https://5803emma.github.io/milestone2-simongame/).
+2. Under repository name, click the option "Clone or download".
+3. In the Clone with HTTPs section, copy the clone URL for the repository. 
+4. Open Git Bash in your local IDE.
+5. Change the current working directory to the location where you want the cloned directory to be created.
+6. Type ```git clone```, and then paste the URL copied in Step 3.
+```console
+git clone https://github.com/USERNAME/REPOSITORY
+```
+7. Press Enter and your local clone will be created.
+
 ## Testing
 
- - Google Chrome developer tools were used to test responsiveness across various devices sizes and operating systems
+ - Google Chrome developer tools were used to test responsiveness across various devices sizes and operating systems.
  - I used [Browserling](https://www.browserling.com/) to test the website across multiple browsers to ensure compatability and responsiveness.
- - All buttons across the site pages were manually tested and operational
- - HTML and CSS code were checked on the [W3C Markup](https://validator.w3.org/) and [CSS Jigsaw](https://jigsaw.w3.org/css-validator/) validators
+ - All buttons across the site pages were manually tested and operational.
+ - HTML and CSS code were checked on the [W3C Markup](https://validator.w3.org/) and [CSS Jigsaw](https://jigsaw.w3.org/css-validator/) validators.
 - Friends and family members played the game.
 
 
