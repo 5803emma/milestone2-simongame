@@ -110,5 +110,11 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
 - The Integrated Development Environment used for this project was Cloud 9 via [Amazon Web Services](https://aws.amazon.com/cloud9/)
 
 
+## Version Control and Deploying the Project
+
+- Github was used for version control and to deploy the website.
+- A Github repository was created and the bash terminal in Cloud 9 was used to commit and push project changes.
+- 
+
 ## Testing
 
