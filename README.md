@@ -173,7 +173,8 @@ I used and adapted code from the following video tutorials to create the game:
 - [Building a Simon Game web app using javascript and jQuery](https://youtu.be/4pfvy_A5ceE)
 - [Speed Styling Simon Game: CSS](https://youtu.be/fJQtc24sCJ8)
 - [On/Off Toggle Switch Button With HTML/CSS ](https://youtu.be/BemxV5rS094)
-- I also got inspiration from the various student Milestone Projects posted in the Peer Code Review channel on [Slack](https://slack.com/intl/en-ie/)
+
+I also got inspiration from the various student Milestone Projects posted in the Peer Code Review channel on [Slack](https://slack.com/intl/en-ie/)
 
 ### Acknowledgements
 
