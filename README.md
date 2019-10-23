@@ -5,9 +5,7 @@ Milestone Project Two <br>Simon Memory Game<br>
 <h2>Interactive Frontend Module</h2>
 
 
-<div> 
-The Simon memory game uses four primary colours accompanied by four musical tones.  It's a familiar and accessible game which is playable by all ages and abilities.  Children of the eighties may remember the electronic Simon devices.  This project aims to replicate some of the functionality of the physical Simon game through the use of Javascript, HTML and CSS.   View the deployed site [here](https://5803emma.github.io/milestone2-simongame/). 
-</div>
+The Simon memory game uses four primary colours accompanied by four musical tones.  It's a familiar and accessible game which is playable by all ages and abilities.  Children of the eighties may remember the electronic Simon devices.  This project aims to replicate some of the functionality of the physical Simon game through the use of Javascript, HTML and CSS.   View the deployed site [here](https://5803emma.github.io/milestone2-simongame/)
 
 
 ## UX
