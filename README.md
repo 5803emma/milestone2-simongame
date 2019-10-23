@@ -1,6 +1,8 @@
-<h1 align="center">
-Milestone Project Two <br>Simon Memory Game<br> Interactive Frontend Module 
+<h1>
+Milestone Project Two <br>Simon Memory Game<br> 
 </h1>
+
+<h2>Interactive Frontend Module</h2>
 
 
 <div> 
@@ -65,8 +67,48 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
     The background image on the main site, the information and lose modals, and the win modal are royalty free images from [Unsplash](https://unsplash.com/).
     
 
-
 ## Features
 
-### Existing Features
+### Main Site
+
+- Header which displays the name of the game.
+- Game board in the centre of the page.
+- How to play button which triggers a game information modal.
+- Footer which explains the site is a project.
+
+### Game Board
+
+- The coloured blocks are disabled when the user visits the site.  They cannot be interacted with.
+- Upon first visiting the site, the score counter will display a "-" to signify that no score has been recorded.
+- Strict mode is automatically active, as it would be in the original Simon game.
+- The user can press the play button in the centre of the board to begin a game or they can begin a game by pressing the play button in the game information modal after they have read the instructions for playing.
+- The game begins with one block flashing and it's accompanying musical tone.  This increases by 1 on each turn.
+- When the computer has finished producing the pattern, the blocks then become active, allowing the player to choose the correct (or incorrect) block pattern.
+
+### Modals
+
+- Bootstrap modals are used to provide the instructions for playing, as well as winning and losing messages to the player, including a record of their score in that game instance, and buttons to begin a new game or close the modals if they don't want to start a new game.
+- The win and lose modals are programmed to appear only when strict mode is true.
+- The win modal appears when the player correctly inputs 10 patterns without an error.
+- The lose modal appears when the player enters an incorrect pattern in strict mode.
+
+### Potential Future Features
+
+- Difficulty settings - easy, moderate and difficult.  The pattern would be generated slowly in easy mode, at a faster pace in moderate, and faster again in difficult.  This is a feature in some of the newer Simon games.
+- An Audio Off option would make the game more difficult as players would only have visual cues for the pattern.
+- Option to store player username and score so that players can try to beat their own scores or those of other players.
+
+
+## Technologies
+
+- HTML, CSS, Javascript
+- [JQuery](https://jquery.com)
+- [Google Fonts](https://fonts.google.com/)
+- [Font Aewsome](https://fontawesome.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- - [Github](https://github.com/)
+- The Integrated Development Environment used for this project was Cloud 9 via [Amazon Web Services](https://aws.amazon.com/cloud9/)
+
+
+## Testing
 

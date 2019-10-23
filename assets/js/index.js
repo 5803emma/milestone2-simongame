@@ -15,7 +15,6 @@ const greenBlock = document.getElementById("4");
 const playButton = document.getElementById("start");
 const strictSlider = document.getElementById("strict");
 const scoreBoard = document.getElementById("score-counter");
-const scrollModalArrow = document.getElementById('modal-scroll');
 const startModal = document.getElementById("start-modal-button");
 const startWinModal = document.getElementById("start-modal-win-button");
 const loseModalDisplay = document.getElementById("lose-modal-display");
@@ -39,15 +38,7 @@ $(document).ready(function() {
         beginGame();
     });
     
-// Function to scroll modal on click
 
-    $(scrollModalArrow).on('click', function(e) {
-        var linkHref = $(this).attr('href');
-        e.preventDefault();
-        $('.modal-body').animate({
-            scrollTop: $(linkHref).offset().top
-        }, 1500);
-    });
 
 // Function checks if strict slider true/false when clicked
 // If true, return to initial new game status
