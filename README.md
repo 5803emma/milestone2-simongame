@@ -49,7 +49,12 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
 
 - #### Colours
 
-    The site is designed to be simple and intuitive.  The dark background contrasts with the game board, helping it to stand out.  The buttons, display, slider and modals all use colours which are in keeping with the game board for design continuity.  The white font is easy to read on the dark background.
+- The site is designed to be simple and intuitive.  
+- The dark background contrasts with the game board, helping it to stand out.  
+- The buttons, display, slider and modals all use colours which are in keeping with the game board for design continuity.  
+- The white font is easy to read on the dark background.
+- The pads flash a lighter colour in game to signify the active block.
+- A transition hover effect on the play button is interative and invites the user to start the game.
 
 - #### Fonts
 
