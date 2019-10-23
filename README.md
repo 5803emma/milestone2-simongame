@@ -6,7 +6,7 @@ Milestone Project Two <br>Simon Memory Game<br>
 
 
 <div> 
-The Simon memory game uses four primary colours accompanied by four musical tones.  It's a familiar and accessible game which is playable by all ages and abilities.  Children of the eighties may remember the physical Simon devices.  This project aims to replicate some of the functionality of the physical Simon game through the use of Javascript, HTML and CSS.    
+The Simon memory game uses four primary colours accompanied by four musical tones.  It's a familiar and accessible game which is playable by all ages and abilities.  Children of the eighties may remember the electronic Simon devices.  This project aims to replicate some of the functionality of the physical Simon game through the use of Javascript, HTML and CSS.    
 </div>
 
 
@@ -60,11 +60,7 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
 
 - #### Fonts
 
-    The Google Font Righteous was chosen as it is easy to read and has a slightly retro feel to it.
-
-- #### Backgrounds
-
-    The background image on the main site, the information and lose modals, and the win modal are royalty free images from [Unsplash](https://unsplash.com/).
+The Google Font Righteous was chosen as it is easy to read and has a slightly retro feel to it.
     
 
 ## Features
@@ -96,7 +92,7 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
 
 - Difficulty settings - easy, moderate and difficult.  The pattern would be generated slowly in easy mode, at a faster pace in moderate, and faster again in difficult.  This is a feature in some of the newer Simon games.
 - An Audio Off option would make the game more difficult as players would only have visual cues for the pattern.
-- Option to store player username and score so that players can try to beat their own scores or those of other players.
+- An option to store player username and score so that players can keep track of their high scores and try to beat their them.
 
 
 ## Technologies
@@ -114,7 +110,39 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
 
 - Github was used for version control and to deploy the website.
 - A Github repository was created and the bash terminal in Cloud 9 was used to commit and push project changes.
-- 
 
 ## Testing
+
+
+## Media
+
+#### Favicon
+- The Simon favicon was created using [Favicon Generator](https://www.favicon-generator.org/).
+
+#### Images
+
+- The background image on the main site, the information and lose modals, and the background image on the win modal are royalty free images from [Unsplash](https://unsplash.com/).
+
+#### Sounds
+    
+- The sounds on the four coloured blocks are from [FreeCodeCamp](https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-simon-game)
+- The winning game sound is from the following royalty and copyright free [YouTube Video](https://youtu.be/P8T6gh9p2-c)
+- The losing game sound is from [FreeSound](https://freesound.org/)
+
+### Sources and Tutorials
+
+I used and adapted code from the following video tutorials to create the game:
+
+- [Simon Game Javascript Tutorial for Beginners](https://youtu.be/n_ec3eowFLQ)
+- [How to Program a Simon Game: HTML](https://youtu.be/9MTR3V2XpRI)
+- [Building a Simon Game web app using javascript and jQuery](https://youtu.be/4pfvy_A5ceE)
+- [Speed Styling Simon Game: CSS](https://youtu.be/fJQtc24sCJ8)
+- [On/Off Toggle Switch Button With HTML/CSS ](https://youtu.be/BemxV5rS094)
+- I also got inspiration from the various student Milestone Projects posted in the Peer Code Review channel on [Slack](https://slack.com/intl/en-ie/)
+
+### Acknowledgements
+
+- Thanks to the Student Care Team at Code Institute for their patience and understanding.
+- Thanks to Ignatius Mentor for helpful and constructive advice.
+- Thanks to my husband Mark and to my family and friends for testing the website and for helping me to see the wood for the trees when the going got tough!
 
