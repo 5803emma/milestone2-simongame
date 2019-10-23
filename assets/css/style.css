@@ -82,25 +82,25 @@ body {
 }
 
 .yellow-block {
-    background-color: #ffff4c;
+    background-color: #ffea00;
     border-top-left-radius: 65%;
    
 }
 
 .blue-block {
-    background-color: #0000ff;
+    background-color: #0000cc;
     border-top-right-radius: 65%;
    
 }
 
 .red-block {
-    background-color: #ff3333;
+    background-color: #cc0000;
     border-bottom-left-radius: 65%;
     
 }
 
 .green-block {
-    background-color: #00ff00;
+    background-color: #00e600;
     border-bottom-right-radius: 65%;
    
 }
@@ -111,7 +111,7 @@ body {
 }
 
 .bright-blue {
-    background-color: lightblue;
+    background-color: #6262ff;
     
 }
 
@@ -165,7 +165,7 @@ body {
     background-color: #000;
     width: 20vw;
     height: 10vw;
-    max-width: 125px;
+    max-width: 140px;
     max-height: 53px;
     margin: 0 auto;
     border: solid 2px blue;
@@ -338,7 +338,7 @@ input:checked[type="checkbox"]:before {
     }
     #score-counter {
         top: 11.5vw;
-        width: 13vw;
+        width: 20vw;
         height: 9vw;
         font-size: 3.7vw;
         line-height: 9.5vw;
