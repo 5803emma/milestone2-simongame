@@ -20,6 +20,7 @@ body {
 .header {
     padding-top: 3%;
     padding-bottom: 2%;
+    text-align: center;
 }
 
 .row {
@@ -241,6 +242,9 @@ input:checked[type="checkbox"]:before {
     left: 35px;
 }
 
+.footer {
+    text-align: center;
+}
 
 
 /* Modal Buttons */
@@ -403,9 +407,7 @@ input:checked[type="checkbox"]:before {
 }
 
 @media screen and (max-width:350px) {
-    .heading-container h1 {
-        font-size: 1.8em;
-    }
+   
     #info-button {
         font-size: 2.5vw;
     }
@@ -422,11 +424,4 @@ input:checked[type="checkbox"]:before {
         border-bottom-right-radius: 33vw;
     }
 }
-
-@media screen and (max-height:830px) {
-    .footer-container {
-        position: static;
-    }
-}
-
 
