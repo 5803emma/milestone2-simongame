@@ -193,8 +193,8 @@ function playerTimeout() {
 // Function that generates the audio for each block
 
 function playAudio(audioPlayed) {
-    let sound = $(`#sound-${audioPlayed}`)[-1];
-    sound.currentTime = -1;
+    let sound = $(`#sound-${audioPlayed}`)[0];
+    sound.currentTime = 0;
     sound.play();
 }
 
