@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--- Meta Data --->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Simon Game">
+
+
+  <!--- Title --->
+  <title>Simon</title>
+
+  <!--- Favicon --->
+  <link class="favicon" rel="icon" href="assets/images/favicon.ico" type="image/ico">
+
+  <!--- Links to Styling --->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <h1 align="center">Simon Memory Game</h1>
+  </header>
+
+
+  <!--- Game Board --->
+  <div class="container-fluid board-container">
+    <div class="row no-gutters">
+      <div class="simon-board col">
+        <!--- Coloured Blocks --->
+        <div class="blocks">
+          <div id="1" class="block yellow-block disabled"></div>
+          <div id="2" class="block blue-block disabled"></div>
+          <div id="3" class="block red-block disabled"></div>
+          <div id="4" class="block green-block disabled"></div>
+        </div>
+        <!--- Controls --->
+        <div class="controls">
+          <div class="game-label">SIMON</div>
+          <div id="score-counter" class="num-display">-</div>
+          <div id="start" class="start-btn"><i class="far fa-play-circle fa-3x"></i></div>
+          <div class="container strict-container">
+            <div class="control-label strict-label">
+              <p class="m-0 p-0">STRICT</p>
+              <div class="strict-switch">
+                <input type="checkbox" id="strict" class="toggle" checked/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- Game Information Button --->
+  <div class="button-container">
+    <div class="row justify-content-center">
+      <button id="info-button" type="button" class="btn btn-success" data-toggle="modal" data-target="#infoModal">HOW TO PLAY<br><i class="fas fa-info-circle fa-2x"></i></button>
+    </div>
+  </div>
+
+  <!--- Footer --->
+  <footer>
+    <p align="center">Created as a Milestone 2 Project for the Code Institute Full Stack Developer Course</p>
+  </footer>
+
+
+
+  <!--- Game Information Modal --->
+  <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="gameInfoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <!-- Game Information Modal Header -->
+        <div class="modal-header px-0 pl-4">
+          <h4 class="modal-title" id="exampleModalScrollableTitle"><i class="fas fa-info-circle"></i> How to Play....<i class="fas fa-info-circle"></i></h4>
+          <button type="button" class="close pl-0 mr-2" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+        				</button>
+        </div>
+        <!--- Game Information Modal Body --->
+        <div class="modal-body modal-body-info">
+          <div class="buttons-box m-2 px-2 py-2">
+            <a id="modal-scroll" href="#info-heading-modal"><i class="fas fa-arrow-down"></i></a>
+            <h3><b>Simon Memory Game</b></h3>
+            <p>Press the play button in the green circle and one of the four coloured blocks will light up. Press the block that lights up. If you press the correct block the counter in the centre of the board will register your successful turn. The number of blocks that light up will increase by one on each turn and the pattern will be random. Your objective is to reproduce the pattern made by the blocks lighting up. It's easy at first, but make sure to stay focused as the patterns get more
+              complex!
+            </p><br>
+            <h3 id="info-heading-modal"><b>Buttons:</b></h3>
+            <p><strong class="h5 font-weight-bold">Green Play Button </strong>To begin the game, press the green play button in the centre of the SIMON game board. You can also press this button to start a new game at any point</p>
+            <p><b class="h5 font-weight-bold">Strict Slider </b>When strict mode is turned ON (BLUE), if you get your sequence wrong at any point the game will be over. If you want to practice, turn strict mode OFF using the slider (GREY) you can keep trying
+              the pattern until you get it correct and then move on to the next pattern.</p>
+            <h3><b>How to Win:</b></h3>
+            <ul class="p-0 pl-3">
+              <li>Turn on Strict mode using the slider in the centre of the Game Board</li>
+              <li>Selecting Strict Mode resets the counter to 0</li>
+              <li>Reach a score of 15 to win</li>
+            </ul><br>
+          </div>
+        </div>
+        <!-- Game Information Modal Footer -->
+        <div class="modal-footer">
+          <h4>G.L.H.F ! <i class="fas fa-smile"></i></h4>
+          <button id="close-button" type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lose Modal -->
+  <div class="modal fade" id="loseModal" tabindex="-1" role="dialog" aria-labelledby="loseGameModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <!-- Lose Modal Header -->
+        <div class="modal-header px-0 pl-4">
+          <h5 class="modal-title" id="exampleModalScrollableTitle-2"><i class="far fa-surprise"></i> Oops!! <i class="far fa-surprise"></i><br> Game Over Buddy !!</h5>
+          <button type="button" class="close pl-0 mr-2" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+        				</button>
+        </div>
+        <!-- Lose Modal Body -->
+        <div class="modal-body">
+          <div class="buttons-box m-2 px-2 py-2 text-center">
+            <h4>You Scored A Grand Total of....</h4><br>
+            <h2 id="lose-modal-display" class="text-center">--</h2>
+            <p class="m-0 mt-5 text-center">Click on the green Start button below if you would like to begin a new game.<br> The grey Close button will close this window without beginning a new game.</p>
+          </div>
+        </div>
+        <!-- Lose Modal Footer -->
+        <div class="modal-footer justify-content-between">
+          <button id="start-modal-button" type="button" class="btn btn-success" data-dismiss="modal">Start</button>
+          <button id="close-button-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Win Modal -->
+  <div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winGameModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content win-modal-content">
+        <!-- Win Modal Header -->
+        <div class="modal-header px-0 pl-4">
+          <h5 class="modal-title text-uppercase" id="exampleModalScrollableTitle-3"><i class="far fa-laugh-squint"></i> YOU WIN!! <i class="far fa-laugh-squint"></i></h5>
+          <button type="button" class="close pl-0 mr-2" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+        				</button>
+        </div>
+        <!-- Win Modal Body -->
+        <div class="modal-body">
+          <div class="buttons-box m-2 px-2 py-2 text-center">
+            <h4 class="text-uppercase">You scored the maximum score of:</h4><br>
+            <h2 id="win-modal-display" class="text-center">--</h2>
+            <h5 class="m-0 mt-5 text-center font-weight-bold text-uppercase">CONGRATULATIONS!</h5>
+            <p class="m-0 mt-3 text-center">Click the green start button to play again !</p>
+          </div>
+        </div>
+        <!-- Win Modal Footer -->
+        <div class="modal-footer justify-content-between">
+          <button id="start-modal-win-button" type="button" class="btn btn-success" data-dismiss="modal">Start</button>
+          <button id="close-button-3" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- Audio --->
+  <audio id="sound-yellow" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+  <audio id="sound-blue" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+  <audio id="sound-red" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+  <audio id="sound-green" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+  <audio id="sound-lost" src="assets/sounds/game-over.wav"></audio>
+  <audio id="sound-win" src="assets/sounds/game-win.wav"></audio>
+
+  <!--- Scripts --->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
+  </div>
+
+</body>
+
+</html>
