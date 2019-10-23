@@ -6,7 +6,7 @@ Milestone Project Two <br>Simon Memory Game<br>
 
 
 <div> 
-The Simon memory game uses four primary colours accompanied by four musical tones.  It's a familiar and accessible game which is playable by all ages and abilities.  Children of the eighties may remember the electronic Simon devices.  This project aims to replicate some of the functionality of the physical Simon game through the use of Javascript, HTML and CSS.    
+The Simon memory game uses four primary colours accompanied by four musical tones.  It's a familiar and accessible game which is playable by all ages and abilities.  Children of the eighties may remember the electronic Simon devices.  This project aims to replicate some of the functionality of the physical Simon game through the use of Javascript, HTML and CSS.   View the deployed site [here](https://5803emma.github.io/milestone2-simongame/). 
 </div>
 
 
@@ -41,7 +41,7 @@ This memory game should be interactive, easy to use, engaging, challenging and r
 
 ### Wireframes
 
-Wireframes of the inital concept and design for desktop, tablet and smartphone were created using [Balsamiq](https://balsamiq.com/).
+Wireframes of the inital concept and design for desktop, tablet and smartphone were created using [Balsamiq](https://balsamiq.com/) and can be view by clicking the links below.
 
 - [Desktop](wireframes/desktop.png) 
 - [Tablet](wireframes/tablet.png) 
