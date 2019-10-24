@@ -3,7 +3,7 @@
 let strictMode = true;
 let pattern = [];
 let playerPattern = [];
-let turn, playerCount, computerCount, playTimeout, playInterval;
+let turn, playerCount, computerCount, playTimeout, playInterval, randomNum;
 
 // JQuery variables caching modals, coloured blocks, buttons and score counter
 
@@ -20,10 +20,23 @@ const startWinModal = document.getElementById("start-modal-win-button");
 const loseModalDisplay = document.getElementById("lose-modal-display");
 const winModalDisplay = document.getElementById("win-modal-display");
 
-// Code inside the function below will wait until Document Object Model is fully created
+// Code inside the function below will wait until the Document Object Model is fully created
 
 $(document).ready(function() {
     
+    // New game function
+
+function beginGame() {
+    clearInterval(playInterval);
+    removeLightOnAllBlocks();
+    $(scoreBoard).text('0');
+    pattern = [];
+    turn = 0;
+    $(".block").addClass('disabled');
+    randomNumber();
+    gamePlay();
+}
+
 // Function to start new game on click
 
     $(playButton).click(function() {
@@ -38,8 +51,6 @@ $(document).ready(function() {
         beginGame();
     });
     
-
-
 // Function checks if strict slider true/false when clicked
 // If true, return to initial new game status
 
@@ -57,7 +68,7 @@ $(document).ready(function() {
             }
             setTimeout(function() {
                 removeLightOnAllBlocks();
-            }, 500);
+            }, 400);
         }
         else {
             strictMode = false;
@@ -90,26 +101,16 @@ $(document).ready(function() {
     });
 });
 
-// New game function restores default settings
 
-function beginGame() {
-    clearInterval(playInterval);
-    removeLightOnAllBlocks();
-    $(scoreBoard).text('0');
-    pattern = [];
-    turn = 0;
-    $(".block").addClass('disabled');
-    randomNumber();
-    gamePlay();
-}
 
-// Select a number and place it into the pattern array
+// Selects a number and places it into the pattern array
 
 function randomNumber() {
     randomNum = Math.ceil(Math.random() * 4);
     pattern.push(randomNum);
     console.log(pattern);
 }
+
 
 /* 
 The Function is run when it's the computers turn to generate a pattern.
@@ -239,7 +240,7 @@ function checking() {
     the player pattern array matches the computer pattern array. if so then the play interval is stopped,
     the pads are disabled and the winning function is run.
     */
-    if (playerCount === 2 && strictMode && playerAndCompSeqMatch) {
+    if (playerCount === 15 && strictMode && playerAndCompSeqMatch) {
         clearInterval(playInterval);
         $(".block").addClass('disabled');
         winGame();
