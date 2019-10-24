@@ -247,7 +247,7 @@ input:checked[type="checkbox"]:before {
 }
 
 
-/* Modal Buttons */
+/* ---------- Modal Buttons */
 
 #info-button {
     width: 25vw;
@@ -329,7 +329,7 @@ input:checked[type="checkbox"]:before {
 
 
 
-/*---------------------------------- MEDIA QUERIES */
+/*------Media Queries */
 
 @media screen and (max-width:600px) {
     .game-label {
@@ -380,9 +380,12 @@ input:checked[type="checkbox"]:before {
         left: 6.1vw;
     }
     #info-button {
-        font-size: 2.7vw;
+        font-size: 4.7vw;
         border-radius: 3vw;
+        width: 60vw;
+        height: 20vh;
     }
+    
     .yellow-block {
         border-top-left-radius: 35vw;
     }
@@ -401,8 +404,8 @@ input:checked[type="checkbox"]:before {
 }
 
 @media screen and (max-width:400px) {
-    .modal-header h5 {
-        font-size: 7.7vw;
+    .modal-title {
+        font-size: 6.7vw;
     }
 }
 

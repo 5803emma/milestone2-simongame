@@ -37,7 +37,8 @@ function beginGame() {
     gamePlay();
 }
 
-// Function to start new game on click
+// Function to start new game on click using: 
+// The play button, the start button in the info modal, and the start button in the game won modal
 
     $(playButton).click(function() {
         beginGame();
@@ -112,7 +113,7 @@ function randomNumber() {
 }
 
 
-/* 
+/* The computer produces a pattern using this function. 
 The Function is run when it's the computers turn to generate a pattern.
 The turn will increment the turn by 1, set the player count and the computer count back to 0
 and set the player pattern back to an empty string.
@@ -154,7 +155,6 @@ function gamePlay() {
         computerCount++;
     }, 800);
 }
-
 
 // Functions which give the light and audio to the blocks
 
