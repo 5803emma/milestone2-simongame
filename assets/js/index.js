@@ -56,4 +56,27 @@ function beginGame() {
     $(startWinModal).on("click", function() {
         beginGame();
     });
+    // Function checks if strict slider true/false when clicked
+// If true, return to initial new game status
+
+    $(strictSlider).on("click", function() {
+        if (strictSlider.checked == true) {
+            strictMode = true;
+            turn = 1;
+            $(".block").addClass('disabled');
+            clearInterval(playInterval);
+            if ($(scoreBoard).text() == "-") {
+                $(scoreBoard).text("-");
+            }
+            else {
+                $(scoreBoard).text("0");
+            }
+            setTimeout(function() {
+                removeLightOnAllBlocks();
+            }, 400);
+        }
+        else {
+            strictMode = false;
+        }
+    });
 });
