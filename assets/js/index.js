@@ -102,7 +102,7 @@ $(document).ready(function() {
             greenLightWithAudio();
             playerPattern.push(parseInt(blockId));
         }
-        checking();
+        inspect();
     });
 });
 
@@ -247,4 +247,43 @@ function inspect () {
             $(".block").addClass('disabled');
             setTimeout(gamePlay, 500);
         }
+}
+
+// If there is not a match between player and computer array and strict mode is off
+// Disable all blocks, do not increment turn, play error audio, display scoreboard text
+// After 600 miliseconds, repeat the previous pattern with timeout function
+
+ else if (playerAndCompPatternDontMatch && !strictMode) {
+        $(".block").addClass('disabled');
+        turn--;
+        playAudio('lost');
+        $(scoreBoard).text('Oops!');
+        addLightsToAllBlocks();
+        setTimeout(function() {
+            removeLightOnAllBlocks();
+            $(scoreBoard).text('Nope!');
+            setTimeout(function() {
+                $(scoreBoard).text(turn);
+                setTimeout(gamePlay, 500);
+            }, 600);
+        }, 600);
+    }
+
+// If there is not a match between player and computer array and strict mode is on
+// Disable all blocks, play lose game audio, display scoreboard text
+// Add bright class to all blocks, display lose game modal with score achieved
+
+else {
+        $(".block").addClass('disabled');
+        playAudio('lost');
+        $(scoreBoard).text('Lose');
+        addLightsToAllBlocks();
+        setTimeout(function() {
+            removeLightOnAllBlocks();
+            setTimeout(function() {
+                $(scoreBoard).text(turn);
+                displayModal();
+            }, 600);
+        }, 400);
+    }
 }
