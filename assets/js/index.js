@@ -157,25 +157,25 @@ function gamePlay() {
 
 function yellowLightWithAudio() {
     $(yellowBlock).addClass('bright-yellow');
-    playTimeout();
+    playerTimeout();
     playAudio('yellow');
 }
 
 function blueLightWithAudio() {
     $(blueBlock).addClass('bright-blue');
-    playTimeout();
+    playerTimeout();
     playAudio('blue');
 }
 
 function redLightWithAudio() {
     $(redBlock).addClass('bright-red');
-    playTimeout();
+    playerTimeout();
     playAudio('red');
 }
 
 function greenLightWithAudio() {
     $(greenBlock).addClass('bright-green');
-    playTimeout();
+    playerTimeout();
     playAudio('green');
 }
 
@@ -295,7 +295,7 @@ else {
 
 function winGame() {
     $(scoreBoard).text("VICTORY!");
-    clearTimeout(playTimeout);
+    clearTimeout(playerTimeout);
     addLightsToAllBlocks();
     setTimeout(function() {
         $(winModalDisplay).text(turn);
