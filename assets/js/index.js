@@ -186,3 +186,11 @@ function playTimeout() {
         removeLightOnAllBlocks();
     }, 500);
 }
+
+// Function that generates the audio for events
+
+function playAudio(audioPlayed) {
+    let sound = $(`#sound-${audioPlayed}`)[0];
+    sound.currentTime = 0;
+    sound.play();
+}
