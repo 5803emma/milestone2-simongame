@@ -24,3 +24,21 @@ const startModal = document.getElementById("start-modal-button");
 const startWinModal = document.getElementById("start-modal-win-button");
 const loseModalDisplay = document.getElementById("lose-modal-display");
 const winModalDisplay = document.getElementById("win-modal-display");
+
+// Code inside the function below will wait until the Document Object Model is fully created
+
+$(document).ready(function() {
+    
+    // New game function
+
+function beginGame() {
+    clearInterval(playInterval);
+    removeLightOnAllBlocks();
+    $(scoreBoard).text('0');
+    pattern = [];
+    turn = 0;
+    $(".block").addClass('disabled');
+    randomNumber();
+    gamePlay();
+}
+});
