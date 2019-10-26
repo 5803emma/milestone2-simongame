@@ -37,7 +37,7 @@ $(document).ready(function() {
         $(scoreBoard).text('0');
         pattern = [];
         turn = 0;
-        $(".block").addClass('disabled');
+        $(".block").addClass('gameoff');
         randomNumber();
         gamePlay();
     }
@@ -63,7 +63,7 @@ $(document).ready(function() {
         if (strictSlider.checked == true) {
             strictMode = true;
             turn = 1;
-            $(".block").addClass('disabled');
+            $(".block").addClass('gameoff');
             clearInterval(playInterval);
             if ($(scoreBoard).text() == "-") {
                 $(scoreBoard).text("-");
@@ -148,7 +148,7 @@ function gamePlay() {
         }
         if (pattern.length === compCount) {
             clearInterval(playInterval);
-            $(".block").removeClass('disabled');
+            $(".block").removeClass('gameoff');
         }
         compCount++;
     }, 800);
@@ -230,11 +230,11 @@ function inspect () {
     let playerAndCompPatternDontMatch = playerPattern[userCount - 1] !== pattern[userCount - 1];
 
 // Statement which checks if 15 correct array matches have been entered in strict mode 
-// If this is true, the game stops, all blocks are disabled and the winGame function runs
+// If this is true, the game stops, all blocks are gameoff and the winGame function runs
 
     if (userCount === 15 && strictMode && playerAndCompPatternMatch) {
         clearInterval(playInterval);
-        $(".block").addClass('disabled');
+        $(".block").addClass('gameoff');
         winGame();
     }
    
@@ -246,7 +246,7 @@ function inspect () {
         if (playerPattern.length === turn) {
             randomNumber();
             $(scoreBoard).text(userCount);
-            $(".block").addClass('disabled');
+            $(".block").addClass('gameoff');
             setTimeout(gamePlay, 500);
         }
 }
@@ -256,7 +256,7 @@ function inspect () {
 // After 600 miliseconds, repeat the previous pattern with timeout function
 
  else if (playerAndCompPatternDontMatch && !strictMode) {
-        $(".block").addClass('disabled');
+        $(".block").addClass('gameoff');
         turn--;
         playAudio('lost');
         $(scoreBoard).text('Oops!');
@@ -276,7 +276,7 @@ function inspect () {
 // Add bright class to all blocks, display lose game modal with score achieved
 
 else {
-        $(".block").addClass('disabled');
+        $(".block").addClass('gameoff');
         playAudio('lost');
         $(scoreBoard).text('LOSE');
         addLightsToAllBlocks();

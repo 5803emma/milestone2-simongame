@@ -32,7 +32,7 @@ body {
 }
 
 
-.disabled {
+.gameoff {
     pointer-events: none;
 }
 
