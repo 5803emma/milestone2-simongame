@@ -194,3 +194,12 @@ function playAudio(audioPlayed) {
     sound.currentTime = 0;
     sound.play();
 }
+
+// Return blocks to their default colours by removing css classes
+
+function removeLightOnAllBlocks() {
+    $(yellowBlock).removeClass("bright-yellow");
+    $(blueBlock).removeClass("bright-blue");
+    $(redBlock).removeClass("bright-red");
+    $(greenBlock).removeClass("bright-green");
+}
