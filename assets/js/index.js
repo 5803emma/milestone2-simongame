@@ -219,3 +219,32 @@ function loseGameModal() {
     $('#loseModal').modal('show');
     $(loseModalDisplay).text(turn);
 }
+
+// Function which checks matching input and increments counter if match true
+
+function inspect () {
+    playerNumber++;
+    let playerAndCompPatternMatch = playerPattern[playerNumber - 1] === pattern[playerNumber - 1];
+    let playerAndCompPatternDontMatch = playerPattern[playerNumber - 1] !== pattern[playerNumber - 1];
+
+// Statement which checks if 15 correct array matches have been entered in strict mode 
+// If this is true, the game stops, all blocks are disabled and the winGame function runs
+
+    if (playerNumber === 15 && strictMode && playerAndCompPatternMatch) {
+        clearInterval(playInterval);
+        $(".block").addClass('disabled');
+        winGame();
+    }
+   
+// Statement which checks if player array matches computer array.
+// If this is true another random number enters the array, the number display is updated
+// The gamePlay function runs after 500 miliseconds
+
+    else if (playerAndCompPatternMatch) {
+        if (playerPattern.length === turn) {
+            randomNumber();
+            $(scoreBoard).text(playerNumber);
+            $(".block").addClass('disabled');
+            setTimeout(gamePlay, 500);
+        }
+}
