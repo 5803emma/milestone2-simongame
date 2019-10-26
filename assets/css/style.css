@@ -38,7 +38,6 @@ body {
 
 
 .board-container {
-
     display: flex;
     padding: 0;
     margin: auto;
@@ -83,31 +82,26 @@ body {
 .yellow-block {
     background-color: #ffea00;
     border-top-left-radius: 65%;
-
 }
 
 .blue-block {
     background-color: #0000cc;
     border-top-right-radius: 65%;
-
 }
 
 .red-block {
     background-color: #cc0000;
     border-bottom-left-radius: 65%;
-
 }
 
 .green-block {
     background-color: #00e600;
     border-bottom-right-radius: 65%;
-
 }
 
 .bright-yellow {
     background-image: none;
     background-color: #fff099;
-
 }
 
 .bright-blue {
@@ -146,7 +140,6 @@ body {
     border: solid 6px #000;
     border-radius: 45%;
     line-height: 55px;
-
 }
 
 .game-label {
@@ -201,7 +194,6 @@ body {
     padding-top: 10px;
     -webkit-transition: -webkit-transform .2s;
     transition: -webkit-transform .2s;
-
 }
 
 .strict-switch {
@@ -221,7 +213,6 @@ input[type="checkbox"] {
     border: none;
     outline: none;
     border-radius: 1vw;
-
 }
 
 input:checked[type="checkbox"] {
@@ -379,7 +370,6 @@ input:checked[type="checkbox"]:before {
         height: 6.1vw;
         width: 11.3vw;
         border-radius: 25vw;
-
     }
     input[type="checkbox"]:before {
         height: 6.1vw;
