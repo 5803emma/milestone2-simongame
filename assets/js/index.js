@@ -104,3 +104,11 @@ function beginGame() {
         checking();
     });
 });
+
+// Selects a number and places it into the pattern array
+
+function randomNumber() {
+    randomNum = Math.ceil(Math.random() * 4);
+    pattern.push(randomNum);
+    console.log(pattern);
+}
