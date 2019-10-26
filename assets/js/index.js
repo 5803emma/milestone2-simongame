@@ -6,7 +6,7 @@ let playerPattern = [];
 let turn;
 let userCount;
 let compCount;
-let playTimeout;
+let gameTimeout;
 let playInterval;
 let randomNum;
 
@@ -28,22 +28,22 @@ const winModalDisplay = document.getElementById("win-modal-display");
 // Code inside the function below will wait until the Document Object Model is fully created
 
 $(document).ready(function() {
-    
+
     // New game function
 
-function beginGame() {
-    clearInterval(playInterval);
-    removeLightOnAllBlocks();
-    $(scoreBoard).text('0');
-    pattern = [];
-    turn = 0;
-    $(".block").addClass('disabled');
-    randomNumber();
-    gamePlay();
-}
+    function beginGame() {
+        clearInterval(playInterval);
+        removeLightOnAllBlocks();
+        $(scoreBoard).text('0');
+        pattern = [];
+        turn = 0;
+        $(".block").addClass('disabled');
+        randomNumber();
+        gamePlay();
+    }
 
-// Function to start new game on click using: 
-// The play button, the start button in the info modal, and the start button in the game won modal
+    // Function to start new game on click using: 
+    // The play button, the start button in the info modal, and the start button in the game won modal
 
     $(playButton).click(function() {
         beginGame();
@@ -57,7 +57,7 @@ function beginGame() {
         beginGame();
     });
     // Function checks if strict slider true/false when clicked
-// If true, return to initial new game status
+    // If true, return to initial new game status
 
     $(strictSlider).on("click", function() {
         if (strictSlider.checked == true) {
@@ -79,8 +79,9 @@ function beginGame() {
             strictMode = false;
         }
     });
+
     // Block click events using the pattern array and block id numbers with respective audio and light
-   
+
     $(block).click(function() {
         clearTimeout(playTimeout);
         removeLightOnAllBlocks();
@@ -175,4 +176,13 @@ function greenLightWithAudio() {
     $(greenBlock).addClass('bright-green');
     playerTimeout();
     playAudio('green');
+}
+
+// This function removes the lights from the blocks
+// The timeout is set to 500 miliseconds
+
+function playTimeout() {
+    gameTimeout = setTimeout(function() {
+        removeLightOnAllBlocks();
+    }, 500);
 }
