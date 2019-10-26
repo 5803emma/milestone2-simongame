@@ -234,7 +234,7 @@ input[type="checkbox"]:before {
     height: 30px;
     width: 30px;
     border-radius: 25%;
-    background-color: #fff;
+    background-color: #fafafa;
     -webkit-box-shadow: 1px 1px 8px #444;
     -o-box-shadow: 1px 1px 8px #444;
     box-shadow: 1px 1px 8px #444;
