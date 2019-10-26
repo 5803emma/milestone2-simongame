@@ -84,7 +84,7 @@ The Google Font Righteous was chosen as it is easy to read and has a slightly re
 - Bootstrap modals are used to provide the instructions for playing, as well as winning and losing messages to the player, including a record of their score in that game instance, and buttons to begin a new game or close the modals if they don't want to start a new game.
 - The win and lose modals are programmed to appear only when strict mode is true.
 - The win modal appears when the player correctly inputs 15 patterns without an error.
-- The lose modal appears when the player enters an incorrect pattern in strict mode.
+- The lose modal appears when the player enters an incorrect pattern at any time in strict mode.
 
 ### Potential Future Features
 
