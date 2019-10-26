@@ -4,8 +4,8 @@ let strictMode = true;
 let pattern = [];
 let playerPattern = [];
 let turn;
-let playerCount;
-let computerCount;
+let userCount;
+let compCount;
 let playTimeout;
 let playInterval;
 let randomNum;
@@ -111,4 +111,40 @@ function randomNumber() {
     randomNum = Math.ceil(Math.random() * 4);
     pattern.push(randomNum);
     console.log(pattern);
+}
+
+// Function increases the turn by one. The user and computer are set to 0.
+// The player pattern is an empty array.  Play is paused for 800 miliseconds for the user.
+// The switch statement checks the numbers in the array and responds with the appropriate light & audio.
+// The break avoids light and sound playing on the previous selected block.
+// The pattern time runs will be equal to the computer count.
+
+function gamePlay() {
+    turn++;
+    userCount = 0;
+    compCount = 0;
+    playerPattern = [];
+    playInterval = setInterval(function() {
+        switch (pattern[compuCount]) {
+            case 1:
+                yellowLightWithAudio();
+                break;
+            case 2:
+                blueLightWithAudio();
+                break;
+            case 3:
+                redLightWithAudio();
+                break;
+            case 4:
+                greenLightWithAudio();
+                break;
+            default:
+                break;
+        }
+        if (pattern.length === compCount) {
+            clearInterval(playInterval);
+            $(".block").removeClass('disabled');
+        }
+        compCount++;
+    }, 800);
 }
