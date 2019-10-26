@@ -176,7 +176,7 @@ body {
 .start-btn {
     float: left;
     margin-right: 90px;
-    margin-top: 137px;
+    margin-top: 145px;
     padding: 9px;
     cursor: pointer;
     line-height: 3em;
@@ -184,7 +184,7 @@ body {
     height: 68px;
     width: 68px;
     border-radius: 30%;
-    border: solid 1px #298417;
+    border: solid 1px #000000;
     transition: 0.3s;
 }
 
@@ -262,8 +262,13 @@ input:checked[type="checkbox"]:before {
     font-weight: bold;
     background-color: #11cc00;
     border: 2px solid #fafafa;
-    
+    transition: 0.3s;
 }
+
+#info-button:hover {
+    transform: scale(1.1);
+}
+
 
 #close-button,
 #close-button-2,
