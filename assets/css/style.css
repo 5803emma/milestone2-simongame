@@ -38,7 +38,7 @@ body {
 
 
 .board-container {
-    
+
     display: flex;
     padding: 0;
     margin: auto;
@@ -67,7 +67,7 @@ body {
 }
 
 
-/*------------- Colours */
+/*------------- Block Colours */
 
 .block {
     position: relative;
@@ -83,31 +83,31 @@ body {
 .yellow-block {
     background-color: #ffea00;
     border-top-left-radius: 65%;
-   
+
 }
 
 .blue-block {
     background-color: #0000cc;
     border-top-right-radius: 65%;
-   
+
 }
 
 .red-block {
     background-color: #cc0000;
     border-bottom-left-radius: 65%;
-    
+
 }
 
 .green-block {
     background-color: #00e600;
     border-bottom-right-radius: 65%;
-   
+
 }
 
 .bright-yellow {
     background-image: none;
     background-color: #fff099;
-    
+
 }
 
 .bright-blue {
@@ -146,7 +146,7 @@ body {
     border: solid 6px #000;
     border-radius: 45%;
     line-height: 55px;
-    
+
 }
 
 .game-label {
@@ -201,7 +201,7 @@ body {
     padding-top: 10px;
     -webkit-transition: -webkit-transform .2s;
     transition: -webkit-transform .2s;
-   
+
 }
 
 .strict-switch {
@@ -220,8 +220,8 @@ input[type="checkbox"] {
     cursor: pointer;
     border: none;
     outline: none;
-    border-radius: 25vw;
-   
+    border-radius: 1vw;
+
 }
 
 input:checked[type="checkbox"] {
@@ -233,7 +233,7 @@ input[type="checkbox"]:before {
     position: absolute;
     height: 30px;
     width: 30px;
-    border-radius: 50%;
+    border-radius: 25%;
     background-color: #fff;
     -webkit-box-shadow: 1px 1px 8px #444;
     -o-box-shadow: 1px 1px 8px #444;
@@ -297,7 +297,8 @@ input:checked[type="checkbox"]:before {
     -o-transition: transform .2s;
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
     background-color: blue;
     font-weight: bold;
 }
@@ -378,7 +379,7 @@ input:checked[type="checkbox"]:before {
         height: 6.1vw;
         width: 11.3vw;
         border-radius: 25vw;
-        
+
     }
     input[type="checkbox"]:before {
         height: 6.1vw;
@@ -394,7 +395,7 @@ input:checked[type="checkbox"]:before {
         width: 60vw;
         height: 20vh;
     }
-    
+
     .yellow-block {
         border-top-left-radius: 35vw;
     }
@@ -419,7 +420,7 @@ input:checked[type="checkbox"]:before {
 }
 
 @media screen and (max-width:350px) {
-   
+
     #info-button {
         font-size: 2.5vw;
     }
@@ -436,4 +437,3 @@ input:checked[type="checkbox"]:before {
         border-bottom-right-radius: 33vw;
     }
 }
-

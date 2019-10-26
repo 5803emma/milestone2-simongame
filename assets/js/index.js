@@ -78,8 +78,8 @@ $(document).ready(function() {
         else {
             strictMode = false;
         }
-    
-    
+
+
     });
 
     // Block click events using the pattern array and block id numbers with respective audio and light
@@ -224,23 +224,23 @@ function displayModal() {
 
 // Function which checks matching input and increments counter if match true
 
-function inspect () {
+function inspect() {
     userCount++;
     let playerAndCompPatternMatch = playerPattern[userCount - 1] === pattern[userCount - 1];
     let playerAndCompPatternDontMatch = playerPattern[userCount - 1] !== pattern[userCount - 1];
 
-// Statement which checks if 15 correct array matches have been entered in strict mode 
-// If this is true, the game stops, all blocks are gameoff and the winGame function runs
+    // Statement which checks if 15 correct array matches have been entered in strict mode 
+    // If this is true, the game stops, all blocks are gameoff and the winGame function runs
 
     if (userCount === 15 && strictMode && playerAndCompPatternMatch) {
         clearInterval(playInterval);
         $(".block").addClass('gameoff');
         winGame();
     }
-   
-// Statement which checks if player array matches computer array.
-// If this is true another random number enters the array, the number display is updated
-// The gamePlay function runs after 500 miliseconds
+
+    // Statement which checks if player array matches computer array.
+    // If this is true another random number enters the array, the number display is updated
+    // The gamePlay function runs after 500 miliseconds
 
     else if (playerAndCompPatternMatch) {
         if (playerPattern.length === turn) {
@@ -249,13 +249,13 @@ function inspect () {
             $(".block").addClass('gameoff');
             setTimeout(gamePlay, 500);
         }
-}
+    }
 
-// If there is not a match between player and computer array and strict mode is off
-// Disable all blocks, do not increment turn, play error audio, display scoreboard text
-// After 600 miliseconds, repeat the previous pattern with timeout function
+    // If there is not a match between player and computer array and strict mode is off
+    // Disable all blocks, do not increment turn, play error audio, display scoreboard text
+    // After 600 miliseconds, repeat the previous pattern with timeout function
 
- else if (playerAndCompPatternDontMatch && !strictMode) {
+    else if (playerAndCompPatternDontMatch && !strictMode) {
         $(".block").addClass('gameoff');
         turn--;
         playAudio('lost');
@@ -271,11 +271,11 @@ function inspect () {
         }, 600);
     }
 
-// If there is not a match between player and computer array and strict mode is on
-// Disable all blocks, play lose game audio, display scoreboard text
-// Add bright class to all blocks, display lose game modal with score achieved
+    // If there is not a match between player and computer array and strict mode is on
+    // Disable all blocks, play lose game audio, display scoreboard text
+    // Add bright class to all blocks, display lose game modal with score achieved
 
-else {
+    else {
         $(".block").addClass('gameoff');
         playAudio('lost');
         $(scoreBoard).text('LOSE');
