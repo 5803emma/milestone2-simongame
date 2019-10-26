@@ -49,6 +49,8 @@ Wireframes of the inital concept and design for desktop, tablet and smartphone w
 
 - #### Colours
 
+<img src="readme/colours.jpg" alt="Board Colourse">
+
 - The site is designed to be simple and intuitive.  
 - The dark background contrasts with the game board, helping it to stand out.  
 - The buttons, display, slider and modals all use colours which are in keeping with the game board for design continuity.  
