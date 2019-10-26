@@ -41,4 +41,19 @@ function beginGame() {
     randomNumber();
     gamePlay();
 }
+
+// Function to start new game on click using: 
+// The play button, the start button in the info modal, and the start button in the game won modal
+
+    $(playButton).click(function() {
+        beginGame();
+    });
+
+    $(startModal).on("click", function() {
+        beginGame();
+    });
+
+    $(startWinModal).on("click", function() {
+        beginGame();
+    });
 });
