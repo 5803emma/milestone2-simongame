@@ -4,9 +4,10 @@ let strictMode = true;
 let pattern = [];
 let playerPattern = [];
 let turn;
-let userCount;
+let playerNumber;
 let compCount;
-let gameTimeout;
+let userCount;
+let playTimeout;
 let playInterval;
 let randomNum;
 
