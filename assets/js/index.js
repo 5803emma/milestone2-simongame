@@ -290,7 +290,7 @@ else {
     }
 }
 
-// 15 has been achieved.  Display victory in score counter.
+// 15 has been achieved.  Display "VICTORY" in score counter.
 // Add bright class to all blocks.  Stop play timeout.
 // Play win game audio.  Display win game modal.
 
