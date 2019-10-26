@@ -203,3 +203,12 @@ function removeLightOnAllBlocks() {
     $(redBlock).removeClass("bright-red");
     $(greenBlock).removeClass("bright-green");
 }
+
+// Add bright colours to all blocks
+
+function addLightsToAllBlocks() {
+    $(yellowBlock).addClass("bright-yellow");
+    $(blueBlock).addClass("bright-blue");
+    $(redBlock).addClass("bright-red");
+    $(greenBlock).addClass("bright-green");
+}
