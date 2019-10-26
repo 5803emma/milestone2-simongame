@@ -191,6 +191,7 @@ body {
 .start-btn:hover {
     background-color: #00ff00;
     opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .start-btn:active {
@@ -259,6 +260,8 @@ input:checked[type="checkbox"]:before {
     padding-top: 0;
     margin: 20px;
     font-weight: bold;
+    background-color: #11cc00;
+    border: 2px solid #fafafa;
     
 }
 

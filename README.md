@@ -83,7 +83,7 @@ The Google Font Righteous was chosen as it is easy to read and has a slightly re
 
 - Bootstrap modals are used to provide the instructions for playing, as well as winning and losing messages to the player, including a record of their score in that game instance, and buttons to begin a new game or close the modals if they don't want to start a new game.
 - The win and lose modals are programmed to appear only when strict mode is true.
-- The win modal appears when the player correctly inputs 10 patterns without an error.
+- The win modal appears when the player correctly inputs 15 patterns without an error.
 - The lose modal appears when the player enters an incorrect pattern in strict mode.
 
 ### Potential Future Features
@@ -146,7 +146,7 @@ git clone https://github.com/USERNAME/REPOSITORY
  - I used [Browserling](https://www.browserling.com/) to test the website across multiple browsers to ensure compatability and responsiveness.
  - All buttons across the site pages were manually tested and operational.
  - HTML and CSS code were checked on the [W3C Markup](https://validator.w3.org/) and [CSS Jigsaw](https://jigsaw.w3.org/css-validator/) validators.
-- Friends and family members played the game, opening it on different devices and browsers
+- Friends and family members played the game, opening it on different devices and browsers.
 - Jasmine testing was not implemented during this project due to time constraints but I intend to learn more about it in order to use in on future projects.
 
 #### Addressing Testing from User Stories

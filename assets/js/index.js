@@ -78,6 +78,8 @@ $(document).ready(function() {
         else {
             strictMode = false;
         }
+    
+    
     });
 
     // Block click events using the pattern array and block id numbers with respective audio and light
@@ -230,7 +232,7 @@ function inspect () {
 // Statement which checks if 15 correct array matches have been entered in strict mode 
 // If this is true, the game stops, all blocks are disabled and the winGame function runs
 
-    if (userCount === 2 && strictMode && playerAndCompPatternMatch) {
+    if (userCount === 15 && strictMode && playerAndCompPatternMatch) {
         clearInterval(playInterval);
         $(".block").addClass('disabled');
         winGame();
