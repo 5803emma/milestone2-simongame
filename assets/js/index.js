@@ -25,7 +25,7 @@ const startWinModal = document.getElementById("start-modal-win-button");
 const loseModalDisplay = document.getElementById("lose-modal-display");
 const winModalDisplay = document.getElementById("win-modal-display");
 
-// Code inside the function below will wait until the Document Object Model is fully created
+// Code inside the function below waits until the Document Object Model is fully created
 
 $(document).ready(function() {
 
@@ -78,8 +78,6 @@ $(document).ready(function() {
         else {
             strictMode = false;
         }
-
-
     });
 
     // Block click events using the pattern array and block id numbers with respective audio and light
