@@ -204,11 +204,18 @@ function removeLightOnAllBlocks() {
     $(greenBlock).removeClass("bright-green");
 }
 
-// Add bright colours to all blocks
+// JQuery function to add bright colours to all blocks
 
 function addLightsToAllBlocks() {
     $(yellowBlock).addClass("bright-yellow");
     $(blueBlock).addClass("bright-blue");
     $(redBlock).addClass("bright-red");
     $(greenBlock).addClass("bright-green");
+}
+
+// Game Over Modal displaying achieved score
+
+function loseGameModal() {
+    $('#loseModal').modal('show');
+    $(loseModalDisplay).text(turn);
 }
