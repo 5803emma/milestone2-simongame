@@ -182,8 +182,8 @@ function greenLightWithAudio() {
 // This function removes the lights from the blocks
 // The timeout is set to 500 miliseconds
 
-function playTimeout() {
-    gameTimeout = setTimeout(function() {
+function playerTimeout() {
+    playTimeout = setTimeout(function() {
         removeLightOnAllBlocks();
     }, 500);
 }
