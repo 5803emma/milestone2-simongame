@@ -79,4 +79,28 @@ function beginGame() {
             strictMode = false;
         }
     });
+    // Block click events using the pattern array and block id numbers with respective audio and light
+   
+    $(block).click(function() {
+        clearTimeout(playTimeout);
+        removeLightOnAllBlocks();
+        let blockId = $(this).attr('id');
+        if (blockId == 1) {
+            yellowLightWithAudio();
+            playerPattern.push(parseInt(blockId));
+        }
+        if (blockId == 2) {
+            blueLightWithAudio();
+            playerPattern.push(parseInt(blockId));
+        }
+        if (blockId == 3) {
+            redLightWithAudio();
+            playerPattern.push(parseInt(blockId));
+        }
+        if (blockId == 4) {
+            greenLightWithAudio();
+            playerPattern.push(parseInt(blockId));
+        }
+        checking();
+    });
 });
