@@ -17,12 +17,12 @@ This memory game should be interactive, easy to use, engaging, challenging and r
 ### User Stories
 
 - I played the actual Simon game and would like to try it out online.
-- The site seems simple and it looks quite like the Simon game.
-- There are no intrusive sounds playing when I visit the site initially.
-- I can see the play button to start the game.  I can see a strict option. I can see a score counter.
-- If I want to know more I can see an information button on How to Play the game, below the game board.
-- The game tones are not unpleasant and some of them are reminiscent of the original game.
-- I can turn strict mode off if I want to practice.
+- The site should be simple and familiar.
+- I'd like to see clear and recognisable ways to interact with the site.
+- I'd like clear instructions on how to play.
+- There should be no intrusive sounds playing when I visit the site initially.
+- The game tones should not be jarring or overly distracting.
+- I'd like an option to practice patterns outside of strict mode.
 
 ### User Experience
 
@@ -148,6 +148,32 @@ git clone https://github.com/USERNAME/REPOSITORY
  - HTML and CSS code were checked on the [W3C Markup](https://validator.w3.org/) and [CSS Jigsaw](https://jigsaw.w3.org/css-validator/) validators.
 - Friends and family members played the game, opening it on different devices and browsers
 - Jasmine testing was not implemented during this project due to time constraints but I intend to learn more about it in order to use in on future projects.
+
+#### Addressing Testing from User Stories
+
+*I played the actual Simon game and would like to try it out online.*
+
+The site is intended to resemble the physical Simon game.  The board is styled to be reminiscent of the hand held device.  
+
+*The site should be simple and familiar.*
+
+The primary colours used are stark against the dark background making it clear to the user where the main area of interactivity lies on the site.
+
+*There should be no intrusive sounds playing when I visit the site initially. The game tones should not be jarring or overly distracting.*
+
+No sounds play upon visiting the website.  The game tones are in keeping with the original game sounds.  The win game and lose game sounds are inspired by older video games for a nostalgic feel.
+
+*I'd like to see clear and recognisable ways to interact with the site.*
+
+Upon visiting the site, the user has an option to interact with the play button, the strict mode toggle slider and the "How to Play" modal button.  There is ease of interactivity to minimise confusion.  Users can see their scores on the display and also receive messages when they win and lose in strict mode, or when they lose in practice mode.
+
+*I'd like clear instructions on how to play.*
+
+There is a button below the game board with an info Font Awesome icon and the text "How to Play".  Upon clicking this button, a scrollable information modal appears for the player with clear instructions on how to play the game.
+
+*I'd like an option to practice patterns outside of strict mode.*
+
+By turning the strict slider off, the user can keep playing, without ever losing the game.  If they get a pattern wrong when strict mode is not active, the pattern is simply repeated for them to try again.
 
 
 ## Media
