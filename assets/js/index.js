@@ -156,25 +156,25 @@ function gamePlay() {
 
 function yellowLightWithAudio() {
     $(yellowBlock).addClass('bright-yellow');
-    playerTimeout();
+    playTimeout();
     playAudio('yellow');
 }
 
 function blueLightWithAudio() {
     $(blueBlock).addClass('bright-blue');
-    playerTimeout();
+    playTimeout();
     playAudio('blue');
 }
 
 function redLightWithAudio() {
     $(redBlock).addClass('bright-red');
-    playerTimeout();
+    playTimeout();
     playAudio('red');
 }
 
 function greenLightWithAudio() {
     $(greenBlock).addClass('bright-green');
-    playerTimeout();
+    playTimeout();
     playAudio('green');
 }
 
@@ -215,7 +215,7 @@ function addLightsToAllBlocks() {
 
 // Game Over Modal displaying achieved score
 
-function loseGameModal() {
+function displayModal() {
     $('#loseModal').modal('show');
     $(loseModalDisplay).text(turn);
 }
@@ -294,7 +294,7 @@ else {
 
 function winGame() {
     $(scoreBoard).text("VICTORY!");
-    clearTimeout(playerTimeout);
+    clearTimeout(playTimeout);
     addLightsToAllBlocks();
     setTimeout(function() {
         $(winModalDisplay).text(turn);

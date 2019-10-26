@@ -147,6 +147,7 @@ git clone https://github.com/USERNAME/REPOSITORY
  - All buttons across the site pages were manually tested and operational.
  - HTML and CSS code were checked on the [W3C Markup](https://validator.w3.org/) and [CSS Jigsaw](https://jigsaw.w3.org/css-validator/) validators.
 - Friends and family members played the game, opening it on different devices and browsers
+- Jasmine testing was not implemented during this project due to time constraints but I intend to learn more about it in order to use in on future projects.
 
 
 ## Media
