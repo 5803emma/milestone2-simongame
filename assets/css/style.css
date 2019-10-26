@@ -105,23 +105,24 @@ body {
 }
 
 .bright-yellow {
+    background-image: none;
     background-color: #fff099;
     
 }
 
 .bright-blue {
+    background-image: none;
     background-color: #6262ff;
-    
 }
 
 .bright-red {
+    background-image: none;
     background-color: tomato;
- 
 }
 
 .bright-green {
+    background-image: none;
     background-color: lightgreen;
-  
 }
 
 
