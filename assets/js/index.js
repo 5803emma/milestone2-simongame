@@ -4,7 +4,6 @@ let strictMode = true;
 let pattern = [];
 let playerPattern = [];
 let turn;
-let playerNumber;
 let compCount;
 let userCount;
 let playTimeout;
@@ -224,14 +223,14 @@ function displayModal() {
 // Function which checks matching input and increments counter if match true
 
 function inspect () {
-    playerNumber++;
-    let playerAndCompPatternMatch = playerPattern[playerNumber - 1] === pattern[playerNumber - 1];
-    let playerAndCompPatternDontMatch = playerPattern[playerNumber - 1] !== pattern[playerNumber - 1];
+    userCount++;
+    let playerAndCompPatternMatch = playerPattern[userCount - 1] === pattern[userCount - 1];
+    let playerAndCompPatternDontMatch = playerPattern[userCount - 1] !== pattern[userCount - 1];
 
 // Statement which checks if 15 correct array matches have been entered in strict mode 
 // If this is true, the game stops, all blocks are disabled and the winGame function runs
 
-    if (playerNumber === 15 && strictMode && playerAndCompPatternMatch) {
+    if (userCount === 15 && strictMode && playerAndCompPatternMatch) {
         clearInterval(playInterval);
         $(".block").addClass('disabled');
         winGame();
@@ -244,7 +243,7 @@ function inspect () {
     else if (playerAndCompPatternMatch) {
         if (playerPattern.length === turn) {
             randomNumber();
-            $(scoreBoard).text(playerNumber);
+            $(scoreBoard).text(userCount);
             $(".block").addClass('disabled');
             setTimeout(gamePlay, 500);
         }
