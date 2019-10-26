@@ -276,14 +276,29 @@ function inspect () {
 else {
         $(".block").addClass('disabled');
         playAudio('lost');
-        $(scoreBoard).text('Lose');
+        $(scoreBoard).text('LOSE');
         addLightsToAllBlocks();
         setTimeout(function() {
             removeLightOnAllBlocks();
             setTimeout(function() {
                 $(scoreBoard).text(turn);
                 displayModal();
-            }, 600);
-        }, 400);
+            }, 500);
+        }, 300);
     }
+}
+
+// 15 has been achieved.  Display victory in score counter.
+// Add bright class to all blocks.  Stop play timeout.
+// Play win game audio.  Display win game modal.
+
+function winGame() {
+    $(scoreBoard).text("VICTORY!");
+    clearTimeout(playerTimeout);
+    addLightsToAllBlocks();
+    setTimeout(function() {
+        $(winModalDisplay).text(turn);
+        $('#winModal').modal('show');
+        playAudio('win');
+    }, 900);
 }
