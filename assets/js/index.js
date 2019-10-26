@@ -118,6 +118,8 @@ function randomNumber() {
 // The switch statement checks the numbers in the array and responds with the appropriate light & audio.
 // The break avoids light and sound playing on the previous selected block.
 // The pattern time runs will be equal to the computer count.
+// When length of the array equals the computer count, play is no longer paused
+// The user can interact with the blocks again.  The computer count increases by one.
 
 function gamePlay() {
     turn++;
@@ -125,7 +127,7 @@ function gamePlay() {
     compCount = 0;
     playerPattern = [];
     playInterval = setInterval(function() {
-        switch (pattern[compuCount]) {
+        switch (pattern[compCount]) {
             case 1:
                 yellowLightWithAudio();
                 break;
@@ -147,4 +149,30 @@ function gamePlay() {
         }
         compCount++;
     }, 800);
+}
+
+// Functions which give the light and audio to the blocks
+
+function yellowLightWithAudio() {
+    $(yellowBlock).addClass('bright-yellow');
+    playerTimeout();
+    playAudio('yellow');
+}
+
+function blueLightWithAudio() {
+    $(blueBlock).addClass('bright-blue');
+    playerTimeout();
+    playAudio('blue');
+}
+
+function redLightWithAudio() {
+    $(redBlock).addClass('bright-red');
+    playerTimeout();
+    playAudio('red');
+}
+
+function greenLightWithAudio() {
+    $(greenBlock).addClass('bright-green');
+    playerTimeout();
+    playAudio('green');
 }
